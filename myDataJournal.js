@@ -33,9 +33,10 @@ function findHighestScreenTime(myData){
     let matchingDay = "";
 
     for (let day of myData) {
-    if (day.screenTime > maxScreenTime) {
-        maxScreenTime = day.screenTime;
-        matchingDay = day.day;
+        if (day.screenTime > maxScreenTime) {
+            maxScreenTime = day.screenTime;
+            matchingDay = day.day;
+        }
     }
     return `${matchingDay} (${maxScreenTime} hrs)`;
 }
@@ -66,6 +67,7 @@ function mostFrequentMood(myData){
 
     let maxCount = 0;
     let mostFrequentMood = "";
+
     for (let mood in moodCounts) {
         if (moodCounts[mood] > maxCount) {
             maxCount = moodCounts[mood];
@@ -76,3 +78,13 @@ function mostFrequentMood(myData){
     return mostFrequentMood;
 }
 
+
+function averageFocus(myData){
+    let avgFocus = 0;
+    let focusSum = 0;
+    for (let day of myData) {
+        focusSum += day.focusLevel;
+    }
+    avgFocus = focusSum / 7;            // Will want to adjust 7 to myData.length if this expands
+    return avgFocus;
+}
