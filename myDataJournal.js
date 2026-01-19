@@ -1,1 +1,42 @@
+// Define an array named weekData with 7 objects, one for each day. 
+// Use your real or realistic data:
+// day (string), sleepHours (number), screenTime (hours), mood (string), caffeineIntake (cups), focusLevel (1–10)
+let weekData = [
+    {day: "Sunday", sleepHours: 6, screenTime: 8, mood: "Sad", caffeineIntake: 0, focusLevel: 5},
+    {day: "Monday", sleepHours: 5, screenTime: 4, mood: "Stressed", caffeineIntake: 0, focusLevel: 4},
+    {day: "Tuesday", sleepHours: 6, screenTime: 4, mood: "Stressed", caffeineIntake: 0, focusLevel: 4},
+    {day: "Wednesday", sleepHours: 5, screenTime: 4, mood: "Stressed", caffeineIntake: 0, focusLevel: 5},
+    {day: "Thursday", sleepHours: 6, screenTime: 4, mood: "Content", caffeineIntake: 0, focusLevel: 5},
+    {day: "Friday", sleepHours: 8, screenTime: 9, mood: "Happy", caffeineIntake: 0, focusLevel: 7},
+    {day: "Saturday", sleepHours: 8, screenTime: 9, mood: "Content", caffeineIntake: 0, focusLevel: 7}
+];
 
+/*
+PREDICTION
+1. Which day had the most screen time? 
+- Friday or Saturday is  the day I had the most screen time. My screentime is "low" during the weekends
+due to working a full-time job. 
+
+2. Best focus day?
+- My best focus day is also probably Friday, which sounds contradicting given that it's also the day of
+most of my screentime. The reason for this is probably because the workweek can be cognitive overload 
+during the day, which decreases my focus level during the night. At the same time, being in the weekend zone
+makes me spiritually happy, so I'm able to focus better.
+
+3. Is more caffeine helping?
+- No, because I do not drink coffee (not a fan of the taste, and yes, that probably puts me at a productivity
+disadvantage).
+*/
+
+function findHighestScreenTime(myData){
+    let day = 0;
+}
+
+
+averageSleep()
+
+
+mostFrequentMood()
+
+
+correlateCaffeineToFocus()
