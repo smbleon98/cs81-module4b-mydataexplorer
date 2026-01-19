@@ -1,3 +1,5 @@
+// My repo URL: https://github.com/smbleon98/cs81-module4b-mydataexplorer
+
 // Define an array named weekData with 7 objects, one for each day. 
 // Use your real or realistic data:
 // day (string), sleepHours (number), screenTime (hours), mood (string), caffeineIntake (cups), focusLevel (1–10)
