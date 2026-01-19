@@ -29,7 +29,20 @@ disadvantage).
 */
 
 function findHighestScreenTime(myData){
-    let day = 0;
+    let maxScreenTime = 0;
+    let matchingDay = "";
+
+    for (let day of myData) {
+    if (day.screenTime > maxScreenTime) {
+        maxScreenTime = day.screenTime;
+        matchingDay = day.day;
+    }
+    return `${matchingDay} (${maxScreenTime} hrs)`;
+}
+
+console.log("Highest screen time:", highestScreenTime, "hours on", highestDay);
+
+
 }
 
 
