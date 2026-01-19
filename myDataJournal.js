@@ -40,13 +40,16 @@ function findHighestScreenTime(myData){
     return `${matchingDay} (${maxScreenTime} hrs)`;
 }
 
-console.log("Highest screen time:", highestScreenTime, "hours on", highestDay);
 
-
+function averageSleep(myData){
+    let avgSleep = 0;
+    let sleepSum = 0;
+    for (let day of myData) {
+        sleepSum += day.sleepHours;
+    }
+    avgSleep = sleepSum / 7;            // Will want to adjust 7 to myData.length if this expands
+    return avgSleep;
 }
-
-
-averageSleep()
 
 
 mostFrequentMood()
