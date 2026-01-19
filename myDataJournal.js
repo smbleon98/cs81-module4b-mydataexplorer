@@ -88,3 +88,13 @@ function averageFocus(myData){
     avgFocus = focusSum / 7;            // Will want to adjust 7 to myData.length if this expands
     return avgFocus;
 }
+
+console.log("Analyzing Shadia's Data Journal...");
+console.log(`Most screen time: ${findHighestScreenTime(weekData)}`);
+console.log(`Average sleep: ${averageSleep(weekData)}`);
+console.log(`Most frequent mood: ${mostFrequentMood(weekData)}`);
+console.log(`Average focus level: ${averageFocus(weekData)}`)
+
+console.log("Reflection:");
+console.log("Stress is my most common mood, and my focus level is very average at 5.3.");
+console.log("I take 0 caffeine, and I wonder if that will help my focus level and general well-being.");
