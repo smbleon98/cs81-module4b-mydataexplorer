@@ -52,7 +52,27 @@ function averageSleep(myData){
 }
 
 
-mostFrequentMood()
+function mostFrequentMood(myData){
+    let moodCounts = {}; 
 
+    for (let day of myData) {
+        let mood = day.mood;
+        if (moodCounts[mood]) {
+            moodCounts[mood] += 1;
+        } else {
+            moodCounts[mood] = 1;
+        }
+    }
 
-correlateCaffeineToFocus()
+    let maxCount = 0;
+    let mostFrequentMood = "";
+    for (let mood in moodCounts) {
+        if (moodCounts[mood] > maxCount) {
+            maxCount = moodCounts[mood];
+            mostFrequentMood = mood;
+        }
+    }
+
+    return mostFrequentMood;
+}
+
